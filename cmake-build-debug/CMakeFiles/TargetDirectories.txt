@@ -1,0 +1,3 @@
+C:/Users/Steven/Documents/MoodMusicUI/cmake-build-debug/CMakeFiles/MoodMusicUI.dir
+C:/Users/Steven/Documents/MoodMusicUI/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Steven/Documents/MoodMusicUI/cmake-build-debug/CMakeFiles/rebuild_cache.dir
