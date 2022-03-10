@@ -28,17 +28,22 @@
 
 #include <processthreadsapi.h>
 
+#include <QTextStream>
+
+#include <QFile>
+
+#include <QCloseEvent>
+
+// thread that runs python application
 class MyThread: public QThread {
   void run() override {
 
-    WinExec("python C:\\Users\\Steven\\MoodMusic", SW_SHOW);
-
+    WinExec("python C:\\Users\\Steven\\MoodMusic", SW_HIDE);
   }
 };
 
+// main window
 MainWindow::MainWindow(QWidget * parent): QMainWindow(parent), ui(new Ui::MainWindow) {
-
-  QFile file("C:\\Users\\Steven\\MoodMusic\\music-value.txt");
 
   ui -> setupUi(this);
   this -> setStyleSheet("background-color: black;");
@@ -58,5 +63,8 @@ MainWindow::MainWindow(QWidget * parent): QMainWindow(parent), ui(new Ui::MainWi
 }
 
 MainWindow::~MainWindow() {
+  qInfo() << "fired off";
+  WinExec("TASKKILL /F /IM Python.exe 2>NULL", SW_HIDE);
+  WinExec("TASKKILL /F /IM cmd.exe 2>NULL", SW_HIDE);
   delete ui;
 }
