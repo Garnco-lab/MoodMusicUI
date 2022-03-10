@@ -1,0 +1,5 @@
+[ytdl_hook]  
+[ytdl_hook] youtube-dl failed: not found or not enough permissions 
+Failed to recognize file format.
+
+Exiting... (Errors when loading file)

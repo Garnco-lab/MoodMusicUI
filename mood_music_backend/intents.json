@@ -1,0 +1,15 @@
+{"intents":
+[
+  {"tag": "sad",
+  "patterns": ["Make me feel sad", "Sad", "boo hoo", "I need help", "I want to feel sad", "depressed", "sad"],
+  "responses": ["sad"]},
+  {"tag": "happy",
+  "patterns": ["Make me feel happy", "I want to feel happy", "happy", "cheerful", "Make me feel good"],
+  "responses": ["Okay lets play something happy"]},
+   {"tag": "angry",
+  "patterns": ["Make me feel angry", "I want to feel angry", "angry", "mad", "upset", "frustrated"],
+  "responses": ["Okay lets play something angry"]},
+  {"tag": "stop",
+  "patterns": ["stop", "stop it", "cut it out", "no more", "end", "quiet"],
+  "responses": ["Okay stopping it now"]}
+]}
